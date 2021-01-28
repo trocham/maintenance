@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "06f4d0e2-64ac-4c8c-b084-2eb906502788",
+		"name": "MAINTENANCE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/maintenanceCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/maintenanceCars",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"maintenanceCars"
+					]
+				},
+				"description": "get cars maintenance"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/maintenanceCar/601234247f2e7008de268e83",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/maintenanceCar/601234247f2e7008de268e83",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"maintenanceCar",
+						"601234247f2e7008de268e83"
+					]
+				},
+				"description": "get only one car mainentance by id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/maintenanceCar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"image\":\"http://3.23.108.188/cars/spark.jpg\" \n    }"
+				},
+				"url": {
+					"raw": "localhost:3001/maintenanceCar",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"maintenanceCar"
+					]
+				},
+				"description": "Save car maintenance"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/maintenanceCar/601234247f2e7008de268e83",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"image\":\"http://3.23.108.188/cars/fusion.jpg\" \n}"
+				},
+				"url": {
+					"raw": "localhost:3001/maintenanceCar/601234247f2e7008de268e83",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"maintenanceCar",
+						"601234247f2e7008de268e83"
+					]
+				},
+				"description": "update car maintenance"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/maintenanceCar/3340",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/maintenanceCar/3340",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"maintenanceCar",
+						"3340"
+					]
+				},
+				"description": "delete Car Maintenance"
+			},
+			"response": []
+		}
+	]
+}
